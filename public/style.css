@@ -1,0 +1,98 @@
+h1 {
+    position: relative;
+    left: 45%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.cardsWrapper {
+    border: 1px dotted black;
+    background-color: #e3d5c0;
+    box-shadow: 10px 10px 5px #343226;
+    width: 450px;
+    height: 500px;
+    margin-bottom: 30px;
+    z-index: 3;
+    position: relative;
+    top: -1420px;
+}
+
+#backgroundImage {
+    width: 100%;
+    height: auto;
+}
+
+.cardsWrapper:hover {
+    border-radius: 20px;
+    background-color: transparent;
+    /*background-color: #a1998c;*/
+    box-shadow: 10px 10px 5px #efe05c;
+
+}
+
+button:hover {
+    background-color: yellow;
+    border-radius: 20px;
+    border:1px dotted black;
+    transform: skew(10deg)
+}
+
+.uploadWrapper {
+    border: 1px dotted #efe05c;
+    background-color: #a1998c;
+}
+
+.uploadWrapper >p {
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+}
+
+#upload-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+#upload-form > input{
+    height: 30px;
+    text-align: center;
+    font-size: 16px;*/
+}
+
+button {
+    position: relative;
+    transform-style: preserve-3d;
+    background-color: white;
+    left: -120px;
+    font-size: 16px;
+    height: 25px;
+}
+
+img {
+    position: relative;
+    left: 5px;
+    width: 440px;
+    height: auto;
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    z-index: 3;
+}
+
+.imageList {
+    position: relative;
+    text-align: center;
+    top: 20px;
+    height: 100%;
+}

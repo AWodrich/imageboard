@@ -1,0 +1,29 @@
+<h1>Home</h1>
+<a ui-sref="upload"><img src="./uploadIcon.jpg"></a>
+<img id="backgroundImage" src="./backgroundImage.jpg">
+<main class="uploadWrapper" ng-controller="uploadImages">
+    <p class="ng-cloak">Title: {{ title }}</p>
+    <p class="ng-cloak">Username: {{ user }}</p>
+
+    <form id="upload-form" method="post" ng-submit="submit()">
+        <input ng-model="title" type="text" name="title" placeholder="Enter title">
+        <input ng-model="user" type="text" name="user" placeholder="Enter username">
+        <input ng-model="description" type="text" name="description" placeholder="Enter description">
+        <input ng-model="file" type="file" name="file">
+        <button type="submit" name="button">Upload now!</button>
+    </form>
+
+</main>
+
+<div class="imageList" ng-controller="imageList">
+    <ul class="cards" ng-if="images.length > 0">
+        <div class="cardsWrapper" ng-repeat="image in images">
+                <a ui-sref="singleImage({imageId:{{image.id}}})">
+                <div class=""><img src="{{image.image}}"></div>
+                <h2>{{image.title}}</h2>
+                <h3>{{image.username}}</h3>
+                <h3>{{image.description}}</h3>
+                </a>
+        </div>
+    </ul>
+</div>

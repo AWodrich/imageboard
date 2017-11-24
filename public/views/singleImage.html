@@ -1,0 +1,14 @@
+
+<div ng-controller="viewImageDetails" class="">
+    <h1>{{title}}</h1>
+    <img src="https://s3.amazonaws.com/anjaspiced/{{imageSrc}}">
+    <h2>Description:</h2>
+        <p>{{description}}</p>
+    <h3> Comments:</h3>
+</div>
+<div ng-controller="submitComments" class="">
+    <form id="comments" method="post" ng-submit="submit()">
+        <input ng-model="comments" type="text" name="comments" placeholder="Enter comments here">
+        <button type="submit" name="button">Submit comments!</button>
+    </form>
+</div>
